@@ -52,7 +52,14 @@ class Person2 {
 }
 
 //Creating new instance of Person
-const personOne = new Person("John", 20);
-personOne.getDetails(); // Output - “John is 20years old!”
+const personFunc = new Person("John", 20);
+personFunc.getDetails(); // Output - “John is 20years old!”
 
-//“생성자는 메모리가 할당 된 후에 새로 생성 된 객체를 초기화하는 데 사용되는 특별한 방법입니다. JavaScript에서는 거의 모든 것이 객체이므로 객체 생성자에 가장 관심이 많습니다. "
+const personClass = new Person2("John", 20);
+personClass.getDetails(); // Output - “John is 20years old!”
+
+// 아래 코드에서 이름과 나이 속성을 가진 함수 / 클래스 Person을 정의했습니다.
+// getDetails () 메소드는 사람의 이름과 나이를 형식으로 인쇄합니다.
+// "이름은 나이가되었습니다!"
+// 구문은 (a) 전통적인 함수 기반 구문과 (b) EC6 클래스 구문의 두 가지 형식으로 제공됩니다.
+// 그런 다음 new 키워드를 사용하여 생성자 메서드를 호출하고 각 속성 값을 전달하여 Person 클래스에 대한 개체를 인스턴스화합니다.
